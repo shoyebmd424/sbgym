@@ -1,0 +1,38 @@
+.footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer div img{
+    width: 10rem;
+}
+.footer div i {
+    color: var(--gray);
+    font-size: 2.5rem;
+}
+.footer div{
+    display: flex;
+    gap: 2rem;
+}
+.f-blur-1{
+    width:26rem ;
+    right: 15%;
+    height: 12rem;
+    filter: blur(200px);
+    background-color: red;
+}
+.f-blur-2{
+    width:26rem ;
+    right: 0;
+    left: 0;
+    height: 12rem;
+    filter: blur(200px);
+    background-color: red;
+}
+@media (max-width:1300px){
+    .f-blur-2{
+        width: 0;
+      }
+}

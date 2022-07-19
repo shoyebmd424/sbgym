@@ -1,0 +1,31 @@
+.right-images{
+display: flex;
+gap: 1rem;
+padding: 2rem;
+}
+.reason-text h3{
+    color: var(--orange);
+}
+
+.reason-text {
+    text-transform: uppercase;
+}
+.point{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.reason-text div i{
+    font-size: 1.5rem;
+}
+.reason-text div{
+margin: 1rem;}
+.reason{
+    margin-top: 5rem;
+
+    display: flex;
+}
+.logos i{
+    color: var(--gray);
+    gap: 1rem;
+}

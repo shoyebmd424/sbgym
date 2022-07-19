@@ -1,0 +1,76 @@
+.plan{
+    margin: 5rem;
+
+}
+.plan-head{
+font-size: 3.5rem;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+font-style: italic;
+margin-bottom: 1rem;
+}
+.plancards{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.plancards>:nth-child(2){
+    background-color:var(--orange);
+    transform: scale(1.1);
+}
+.plan-card{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    gap: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--gray);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.plan-card div h2{
+    text-transform: uppercase;
+}
+.plan-card i{
+    font-size: 2rem;
+    color: white;
+}
+.bulletpoints{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+.btnn{
+    background-color: white;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.btnn a{
+    color:black;
+    padding:8px;
+}
+
+.plan-blur-1{
+    width: 32vw;
+    height: 23rem;
+    top: 110rem;
+    left: 0;    
+}
+.plan-blur-2{
+    width: 32vw;
+    height: 23rem;
+    top: 110rem;
+    right: 0;    
+}
+@media (max-width:1000px){
+    .blur-plan-2{
+        width: 0;
+      }
+}

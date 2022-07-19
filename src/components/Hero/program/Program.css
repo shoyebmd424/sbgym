@@ -1,0 +1,52 @@
+ .program{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+ }
+ .program-header{
+   flex-wrap:wrap ;
+
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic ;
+ }
+ .card{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content:left;
+    width: 18vw;
+    padding: 1.5rem;
+    background-color:var(--gray);
+    color: white;
+    
+ }
+ .card i{
+    color: white;
+    
+ }
+ .card div i{
+    position: relative;
+    top: 10px;
+    left: 1rem;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+ }
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .card:hover{
+    background-color:var(--orange);
+ }

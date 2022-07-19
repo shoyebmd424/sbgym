@@ -1,0 +1,53 @@
+:root{
+ --orange   : rgb(230, 168, 54);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 4rem;
+    height: 10vh;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+
+}
+
+.header-menu li:hover{
+    cursor: pointer;
+    color: var(--orange);
+   
+}
+.header-menu a:hover{
+    border-bottom: 2px solid var(--orange);
+    color: var(--lightgray);
+}
+@media (max-width:1000px){
+    .header-menu{
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--darkgray);
+        padding:1rem 5rem;
+        margin-left: auto;
+        z-index: 6;
+        border-radius: 1rem;
+    }
+    .cross{
+        display: block;
+        position: relative;
+        top: -0.5rem;
+        left: 6rem;
+    }
+}
+@media (min-width:1000px) {
+    .cross{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,236 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.left-h{
+padding:1rem;
+padding-top: 1.5rem;
+ flex: 3;
+ display: flex;
+ gap: 2rem;
+ flex-direction: column;
+}
+.right-h{
+    flex: 1;
+    position: relative;
+    background: var(--orange);
+    z-index: 2;
+}
+.best-ad{
+    margin-top: 4rem;
+    background: #324625;
+    border-radius:4rem ;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform:capitalize ;
+    color:  white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.best-ad span{
+    z-index: 2;
+}
+.best-ad div{
+    position: absolute;
+    background: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;text-transform: uppercase;
+    font-size: 4.5rem;
+    color: white;
+    text-overflow: inherit;
+
+
+}
+.hero-desc{
+font-size: 1rem;
+font-weight: 200;
+text-transform: capitalize;
+letter-spacing: 1px;
+width: 80%;
+color: white;
+}
+.figures{
+    display: flex;
+    gap: 2rem;
+}
+.figures div{
+    display: flex;
+    flex-direction: column;
+}
+.figures div span:nth-child(1){
+     color: white;
+        font-size: 2rem;
+}
+.figures div span:nth-child(2){
+     color: var(--gray);
+     text-transform: capitalize;
+}
+.btn{
+    background-color: #fff;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 4px solid transparent;
+    transition: 300ms all;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+.hero-buttons>:nth-child(1){
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem; 
+    border: 2px solid var(--orange);
+}
+
+.right-h>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkgray);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+    z-index: 5;
+}
+.heart-rate>:nth-child(2){
+    color: var(--gray);
+}
+i{
+font-size: 3.5rem;
+color: red;
+}
+.heart-rate>:nth-child(3){
+    color: white;
+    font-size: 1.5rem;
+}
+.hero-image{
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    width: 47vw;
+    z-index: 3;
+}
+.hero-image-bg{
+    position: absolute;
+    top: 7rem;
+    right: 23rem;
+    z-index: 1;
+    width: 24vw;
+}
+.calaries{
+    display: flex;
+    gap: 1rem;  
+    background-color: var(--calorycard);
+    border-radius: 5px;
+    padding: 8px;
+    width: fit-content;
+    position: absolute;
+    top: 35rem;
+    right: 49rem;
+    background-color: var(--darkgray);
+}
+.calaries>:nth-child(1){
+    font-size: 4rem;
+}
+ .calaries>div{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 1rem;
+ }
+ .calaries>div>:nth-child(1){
+    color: var(--gray);
+ }
+ .calaries>div>:nth-child(2){
+ color: white;
+    font-size: 2rem;
+ }
+ .hero-blur{
+    width: 22vw;
+    height: 30rem;
+    left: 0;
+ }
+ @media (max-width:1720px){
+    .calaries{
+        top: 35rem;
+    }
+    .best-ad{
+        z-index: 5;
+    }
+    .hero-text{
+        z-index: 5;
+    }
+    .hero-desc{
+        z-index: 5;
+    }
+ }
+ @media(max-width:1370px){
+    .calaries{
+        right: 24rem;
+        top: -8rem;
+    }
+    .hero-image{
+        position: relative;
+        top: 0;
+        width: 130vw;
+    }
+    .hero-image-bg{
+        /* top: -1rem; */
+        top: 10vh;
+    }
+    .hero{
+        flex-direction: column;
+    }
+ }
+ @media (max-width:1000px){
+    .calaries{
+        right: 0;
+        position: relative;
+        top: 0vh;
+    }
+    .right-h{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .hero-image-bg{
+        right: 27vw;
+    width: 64vw;
+    }
+    .heart-rate{
+        right:4vw ;
+    }
+ }
