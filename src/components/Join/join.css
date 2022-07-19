@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+p{
+    color:white;
+}
 .joining-form{
     color: var(--darkgray);
     padding: 8rem;
